@@ -1,0 +1,26 @@
+/* 1-Descendant Selector */
+div p {
+    /* background-color: #fdc7d5; */
+}
+
+/* 2-Universal Selector */
+div * {
+    /* background-color: #fdc7d5; */
+  }
+
+  /* 3-Adjacent Sibling Selector */
+  /* select first p after div */
+  div + p {
+    /* background-color: #fdc7d5; */
+  }
+
+  /* 4-General Sibling Selector */
+  div ~ p {
+    /* background-color: #fdc7d5; */
+  }
+
+  /* 5-Child Selector */
+  /* div > p selects all p that are direct children div */
+  div > p {
+    background-color: #fdc7d5;
+  }

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>selectors</title>
+    <link rel="stylesheet" href="combinators.css" />
+    <link rel="stylesheet" href="Attribute.css" />
+  </head>
+  <body>
+    <div>
+      <p>First Paragraph in div</p>
+      <p>Second Paragraph in div</p>
+      <span>Third Span in div</span>
+      <p>Fourth Paragraph in div</p>
+      <ul>
+        <li>First Item</li>
+        <li>Second Item</li>
+      </ul> </div
+    ><p>Fifth Paragraph out div</p>
+    <p>Sixth Paragraph out div</p>
+    <!-- ///////////////// -->
+    <input type="text" placeholder="Enter Input" />
+    <input type="text" placeholder="Disabled Input" disabled />
+    <!-- //////////////////// -->
+    <p class="line-first-para">First Paragraph</p>
+    <p class="second-para">Second Paragraph</p>
+    <p class="line-last">Third Paragraph</p>
+
+    <!-- ////////////////// -->
+
+    <div data-id="hello"> I will be matched, as this is an exact match </div>
+    <div data-id="hello-followed-by-hypen"> Select me as well </div>
+    <div data-id="hello-yes select also"> Yes, you read it right </div>
+    <div data-id="hell"> Nope, I won't be matched </div>
+    <div data-id="hello neither I will be"> Not selected </div>
+    <hr/>
+    <!-- ///////(~)////// -->
+    <div data-id="hello"> I will be matched, as this is an exact match </div>
+    <div data-id="hello followed-by-hypen">
+      Select me as I have hello seperated by space
+    </div>
+    <div data-id="hello-yes select also"> No, You cann't match me!</div>
+    <div data-id="hello dsf df"> I am glad to be selected </div>
+    <div data-id="hel"> No, I am not selected!</div>
+    <div data-id="No I wont be selected"> Nope </div>
+  </body>
+</html>

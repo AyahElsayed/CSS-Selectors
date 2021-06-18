@@ -1,0 +1,65 @@
+Css Selectors:
+
+    A. Combinators 
+            1-Descendant Selector (a b)
+                selects all the p elements inside of div
+
+            2-Universal Selector (a*)
+                select all the elements with the universal selector
+
+            3-Adjacent Sibling Selector (a + b)
+                selects an element that directly follows another element
+
+            4-General Sibling Selector (a ~ b)
+                select all siblings of an element that follow it. 
+                This is like the Adjacent Selector (div + p), 
+                but this one gets all of the following elements instead of one
+
+            5-Child Selector (a > b)
+                selects direct children of an element
+
+    B. Attribute Selector
+        It combines the attribute selector with another selector by adding it to the end.
+            1-Attribute Value Selector
+                selects all elements with this value
+
+            2-Attribute Starts With Selector
+                selects elements with class name starts with this word
+
+            3-Attribute Ends With Selector
+                selects elements with class name ends with this word
+
+            4-Attribute Wildcard Selector
+                selects all elements with "char. or word" in their class
+
+    C. Pseudo class selector
+        The pseudo-class selector allows to select an element is a special state, 
+        like while the element is being hovered or the element is active or focused, etc. 
+        hover: | focus | disabled | first-child | last-child |visited
+
+    D. Pseudo element selector
+        These selectors are used to style (or select) a specific part of an element.
+        after: | before: | => Used to insert & style content after / before a given element.
+        first-letter => Selects the first letter of a given selector.
+        first-line => Selects the first line of a given selector.
+        selection => Selects the content selected by a user.
+
+    ============================================
+
+    * Attribute selector:
+    --------------------
+    Attribute selector can do an exact or a partial match
+        partial matching: => syntax => [attribute-name(flag)=”attribute value”]
+
+        flags: =>
+            - ‘|’ when this flag is applied elements with attributes starting with the attribute value 
+            and followed by a hyphen are matched
+
+            - ‘^’ this flag works like ‘|’ but this is more exclusive. 
+            This selects all the elements which have attribute starting with the given value
+
+            - ‘~’ this flag selects elements which contain the attribute value in a space-separated value
+
+            ** (i) after the attribute (irrespective) => 
+            [data-name=”hello” i] will select everything with an attribute value of from ‘hello’, ‘Hello’, ‘HEllo’ to ‘HELLO’.
+            

@@ -1,0 +1,38 @@
+input[disabled] {
+    background: #82ffdc;
+}
+
+/* 1️. Attribute Value Selector */
+input[type="text"] {
+    font-size: 30px;
+    margin-top: 5rem;
+  }
+
+  /* 2-Attribute Starts With Selector */
+  [class^="line"] {
+    background: yellow;
+}
+
+/* 3-Attribute Ends With Selector */
+[class$="para"] {
+    background: skyblue;
+}
+
+/* 4-Attribute Wildcard Selector */
+[class*="-"] {
+    background: orangered;
+    color: white;
+}
+
+/* ///////////// */
+[data-id|="hello"] {
+    color: rgb(36, 245, 9);
+  }
+
+  [data-id^="hello"] {
+    color: rgb(11, 8, 194);
+  }
+
+  [data-id~="hello"] {
+    color: rgb(238, 12, 12);
+  }
